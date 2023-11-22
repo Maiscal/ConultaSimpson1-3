@@ -2,7 +2,8 @@
 def integracion(f: Double => Double, a: Double, b: Double): Double= {
   val h = b - a
   val x = (a+b)/2
-  h * ((f(a)+ (4*f(x)) + f(b))/6)
+  val operacion = h * ((f(a)+ (4*f(x)) + f(b))/6)
+  operacion
 }
 
 def calError(f1: Double, a: Double): String = {
